@@ -1,0 +1,7 @@
+# Sample inputs for Learner Landing Zone Deployment on Day 1
+# Rename this file to terraform.tfvars or pass via CLI:
+# terraform apply -var-file=terraform.tfvars.sample
+
+project_id    = "da-advanced-elevate-c1-t1"
+gcp_region    = "us-central1"
+
