@@ -142,7 +142,7 @@ After `terraform apply` finishes (or when checking output logs in `bootstrap_out
 - **IAM & Service Accounts: [Workshop Service Account](https://console.cloud.google.com/iam-admin/iam)** `cymbal-sa-data@<PROJECT_ID>.iam.gserviceaccount.com`.
 - **[Cloud Storage Bucket](https://console.cloud.google.com/storage/browser?forceOnBucketsSortingFiltering=true&bucketType=live)** `gs://<PROJECT_ID>-module1-bucket` with pre-staged data directories:
   - `warranty_generic/` containing 26 PDFs.
-  - `store_pos_manual_generic/` containing 6 PDFs.
+  - `store_pos_manual_generic/` containing 5 PDFs.
   - `gold_inventory_reconciliation_ledger/` for Iceberg Managed table data.
 - **[BigQuery](https://console.cloud.google.com/bigquery) Cloud Resource Connection** `biglake-iceberg-connection`with connection service account granted `roles/storage.objectUser`, `roles/storage.bucketViewer` and `roles/aiplatform.user` at the [project level](https://console.cloud.google.com/iam-admin/iam).
 - **BigQuery Datasets:**
