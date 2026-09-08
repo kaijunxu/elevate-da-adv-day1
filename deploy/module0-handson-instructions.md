@@ -91,7 +91,7 @@ gcloud storage buckets create gs://<PROJECT_ID>-tfstate --project=<PROJECT_ID> -
 
 ### Step 1: Create local `terraform.tfvars`
 > [!IMPORTANT]
-> All steps must be run in the folder that contains this instructions file. Navigate to the folder using `cd /<REPOSITORY_ROOT>/module_0/starter`.
+> All steps must be run in the folder that contains this instructions file. Navigate to the folder using `cd /<REPOSITORY_ROOT>/deploy`.
  
 To provide the required variables for Terraform:
 1. Make a copy of the sample variables file:
