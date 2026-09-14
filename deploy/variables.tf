@@ -56,10 +56,12 @@ variable "data_service_roles" {
     "bigquery.jobUser",                  # module 1 (Run BQ jobs/queries)
     "bigquery.connectionUser",           # module 1 (Read BigLake external tables)
     "bigquery.readSessionUser",          # module 1 (Spark BigQuery Storage Read API)
+    "cloudtrace.agent",                  # module 3 (Agent Runtime Traces)
     "composer.worker",                   # module 1 (Composer environment worker nodes)
     "dataproc.editor",                   # module 1 (Submit Dataproc Serverless batches)
     "dataproc.worker",                   # module 1 (Dataproc Serverless execution)
     "geminidataanalytics.dataAgentUser", # module 3
+    "iam.serviceAccountTokenCreator",    # module 3 (BQ Agent Analytics Plugin)
     "iam.serviceAccountUser",            # module 1 (Composer to act as Dataproc execution SA)
     "logging.logWriter",                 # module 1 & 2 (VM and container logging)
     "managedkafka.client",               # module 2 (Kafka VM client)

@@ -187,3 +187,4 @@ Operational POS logs, store inventories, and supplier PDFs flow through AWS S3 l
 | Cross-System Orchestration (UC-2.x) | Successful multi-agent collaboration across SQL, RAG, and streaming cache tools. | 100% Pass on end-to-end multi-domain test scenarios (UC-2.1, UC-2.2, UC-2.3). | Live conversational walkthrough during final presentation. |
 | Dynamic PII Masking & Governance | Redaction of customer payment card numbers based on caller IAM token. | 100% Masking (XXXX-XXXX-XXXX-9999) for unauthorized roles; 0 PII leaks. | Test queries using Store Manager token vs. Auditor token and inspect returned payloads. |
 | Resilience & Partial Synthesis | System behavior during simulated subsystem outage (e.g., regional DB disconnect). | 100% Graceful degradation; partial synthesis delivered with clear user warning. | Simulate firewall drop on regional DB connector during UC-2.2 execution. |
+

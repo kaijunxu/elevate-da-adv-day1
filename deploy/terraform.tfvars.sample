@@ -3,5 +3,4 @@
 # terraform apply -var-file=terraform.tfvars.sample
 
 project_id    = "da-advanced-elevate-c1-t1"
-gcp_region    = "us-central1"
 

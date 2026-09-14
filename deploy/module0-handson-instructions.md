@@ -98,7 +98,7 @@ To provide the required variables for Terraform:
    ```bash
    cp terraform.tfvars.sample terraform.tfvars
    ```
-2. Open [terraform.tfvars](./terraform.tfvars) (copied from [terraform.tfvars.sample](./terraform.tfvars.sample)) and replace the default values for `project_id` and `gcp_region` with your actual Google Cloud Project ID and desired region.
+2. Open [terraform.tfvars](./terraform.tfvars) (copied from [terraform.tfvars.sample](./terraform.tfvars.sample)) and replace the default value for `project_id` with your actual Google Cloud Project ID. The lab has been configured to use the `us-central1` region and you **must not** change the region.
 
 > [!NOTE]
 > The Terraform configuration files, especially ([infra.tf](./infra.tf)) and ([variables.tf](./variables.tf)) can be read as a reference but should **not** be edited.
@@ -220,3 +220,4 @@ terraform output biglake_service_account_id
 > Due to a known issue with GKE ([b/438261587](https://b.corp.google.com/issues/438261587)), deleting the Kafka Connect cluster can leave behind orphaned Private Service Connect (PSC) network attachments, which prevents subnet deletion when you run `terraform destroy`. You must manually delete the network attachments before running `terraform destroy` again.
 > 
 > It is safe to attempt to delete all network attachments - only unused attachments are allowed to be deleted.
+
