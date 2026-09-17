@@ -166,8 +166,8 @@ After `terraform apply` finishes (or when checking output logs in `bootstrap_out
   - Contains topic `pos-transactions`  with 5 partitions and replication factor 3. and `connect-*` internal topics used by Kafka Connect.
 - **[Kafka Connect Cluster](https://console.cloud.google.com/managedkafka/connectClusters):** `kafka-connect-cluster` with 3 vCPUs and 3 GiB RAM.
 - **[Agent Platform Endpoints](https://console.cloud.google.com/agent-platform/online-prediction/endpoints):**
-  - Order anomaly detection endpoint (ID `order-anomaly-endpoint`) with 1 deployed model `model-order-anomaly-deployed`.
-  - Cashier abuse detection endpoint (ID `cashier-abuse-endpoint`) with 1 deployed model `model-cashier-abuse-deployed`.
+  - Order anomaly detection endpoint (ID `order-anomaly-endpoint`) with 1 deployed model `order_anomaly_model-deployed`.
+  - Cashier abuse detection endpoint (ID `cashier-abuse-endpoint`) with 1 deployed model `cashier_abuse_model-deployed`.
 
 If any resources are missing, check for errors in `bootstrap_errors.txt`, resolve them and run `terraform apply` again. If you see errors regarding model deployment, refer to the section below.
 

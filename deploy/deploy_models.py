@@ -373,12 +373,12 @@ if __name__ == "__main__":
 
     models = [
         {
-            "model_display_name": "model-cashier-abuse",
+            "model_display_name": "cashier_abuse_model",
             "source_model_name": "cashier_abuse_model",
             "endpoint_id": cashier_abuse_endpoint_name,
         },
         {
-            "model_display_name": "model-order-anomaly",
+            "model_display_name": "order_anomaly_model",
             "source_model_name": "order_anomaly_model",
             "endpoint_id": order_anomaly_endpoint_name,
         },
